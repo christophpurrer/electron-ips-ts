@@ -1,4 +1,5 @@
 {
+  /* Visit https://aka.ms/tsconfig.json to read more about this file */
   "compileOnSave": false,
   "compilerOptions": {
     "target": "es6",
@@ -7,7 +8,11 @@
     "outDir": "dist",
     "baseUrl": ".",
     "noImplicitAny": true,
-    "moduleResolution": "node"
+    "noUnusedLocals": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"]
 }
