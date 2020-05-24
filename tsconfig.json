@@ -1,12 +1,13 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "noImplicitAny": true,
     "sourceMap": true,
-    "moduleResolution": "node",
     "outDir": "dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "moduleResolution": "node"
   },
   "include": ["src/**/*"]
 }
