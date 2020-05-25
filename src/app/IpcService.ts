@@ -9,9 +9,7 @@ export class IpcService {
     if (!this.ipcRenderer) {
       this.initializeIpcRenderer();
     }
-
-    const ipcRenderer = this.ipcRenderer;
-    return ipcRenderer.invoke(channel, request);
+    return this.ipcRenderer.invoke(channel, request);
   }
 
   private initializeIpcRenderer() {

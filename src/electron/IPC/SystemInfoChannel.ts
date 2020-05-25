@@ -9,9 +9,6 @@ export class SystemInfoChannel implements IpcChannelInterface {
   }
 
   handle(event: IpcMainEvent, request: IpcRequest): Promise<any> {
-    // if (!request.responseChannel) {
-    //   request.responseChannel = `${this.getName()}_response`;
-    // }
     return Promise.resolve({ kernel: execSync("uname -a").toString() });
   }
 }

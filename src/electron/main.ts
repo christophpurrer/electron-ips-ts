@@ -35,7 +35,7 @@ class Main {
       },
     });
 
-    this.mainWindow.webContents.openDevTools();
+    // this.mainWindow.webContents.openDevTools();
     this.mainWindow.loadFile("../../index.html");
   }
 

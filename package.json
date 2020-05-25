@@ -1,14 +1,12 @@
 {
   "name": "electron-ts",
   "version": "1.0.0",
-  "description": "Yet another Electron application",
+  "description": "Yet another Electron application using ipcRenderer.invoke()",
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf build && mkdir build",
-    "watch": "tsc -w",
     "prestart": "yarn clean && yarn build",
-    "start": "electron ./dist/electron/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ./dist/electron/main.js"
   },
   "author": "Kevin Hirczy <https://nehalist.io>",
   "license": "MIT",
